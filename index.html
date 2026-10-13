@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osho Janet Oluwatimilehin</title>
+<meta name="description" content="Chemistry graduate working on the removal of heavy metals from water, with Python for reproducible data analysis.">
+<link rel="canonical" href="https://Timimi18.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Timimi18.github.io/">
+<meta property="og:title" content="Osho Janet Oluwatimilehin">
+<meta property="og:description" content="Chemistry graduate, Lagos. Removal of heavy metals from water, and Python for reproducible analysis.">
+<meta property="og:image" content="https://Timimi18.github.io/fig-kinetics.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #f6f7f5;
+    --ink: #17211d;
+    --ink-soft: #4d5a55;
+    --rule: #d3dad5;
+    --accent: #0d6257;
+    --accent-soft: #e4efeb;
+    --surface: #fffffe;
+  }
+  html[data-theme="dark"] {
+    --paper: #11181a;
+    --ink: #e7ede9;
+    --ink-soft: #97a6a0;
+    --rule: #28343a;
+    --accent: #5cc7b0;
+    --accent-soft: #19282a;
+    --surface: #161f22;
+  }
+
+- { box-sizing: border-box; }
+
+body {
+margin: 0;
+background: var(–paper);
+color: var(–ink);
+font-family: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+font-size: 1.0625rem;
+line-height: 1.65;
+-webkit-text-size-adjust: 100%;
+}
+
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.4rem 5rem; }
+
+a { color: var(–accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(–accent); outline-offset: 3px; border-radius: 2px; }
+
+.topbar {
+display: flex; justify-content: flex-end;
+max-width: 46rem; margin: 0 auto; padding: 1rem 1.4rem 0;
+}
+.toggle {
+font: inherit; font-size: 0.85rem;
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+background: none; border: 1px solid var(–rule); color: var(–ink-soft);
+padding: 0.35rem 0.8rem; border-radius: 999px; cursor: pointer;
+}
+.toggle:hover { color: var(–ink); border-color: var(–ink-soft); }
+
+header.intro { padding: 2rem 0 0; }
+h1 {
+font-size: clamp(2rem, 7vw, 2.9rem);
+line-height: 1.12; letter-spacing: -0.015em;
+font-weight: 600; margin: 0 0 0.5rem;
+}
+.role { color: var(–ink-soft); font-size: 1.1rem; margin: 0 0 1.4rem; }
+
+.contact {
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.9rem; line-height: 2.1; margin: 0 0 2.2rem;
+}
+.contact a { margin-right: 1.1rem; white-space: nowrap; }
+
+.lede { font-size: 1.15rem; margin: 0 0 1.1rem; }
+
+h2 {
+font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em;
+margin: 3.4rem 0 0; padding-bottom: 0.5rem;
+border-bottom: 1px solid var(–rule);
+}
+h3 { font-size: 1.08rem; font-weight: 600; margin: 0 0 0.3rem; }
+
+.item { padding: 1.5rem 0; border-bottom: 1px solid var(–rule); }
+.item:last-child { border-bottom: none; }
+.item p { margin: 0.4rem 0 0; color: var(–ink-soft); }
+.item p.where { color: var(–ink); margin-top: 0; }
+
+.meta {
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.82rem; color: var(–ink-soft); margin: 0.1rem 0 0.6rem;
+}
+
+.feature {
+background: var(–surface);
+border: 1px solid var(–rule);
+border-left: 3px solid var(–accent);
+padding: 1.5rem 1.4rem; margin: 1.6rem 0 0;
+}
+.feature h3 { font-size: 1.2rem; }
+
+table.findings {
+width: 100%; border-collapse: collapse; margin: 1.2rem 0 0;
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.86rem;
+}
+table.findings th, table.findings td {
+text-align: left; vertical-align: top;
+padding: 0.55rem 0.7rem 0.55rem 0;
+border-bottom: 1px solid var(–rule);
+}
+table.findings th { font-weight: 600; color: var(–ink); width: 34%; }
+table.findings td { color: var(–ink-soft); }
+table.findings tr:last-child th, table.findings tr:last-child td { border-bottom: none; }
+
+ul.plain { list-style: none; padding: 0; margin: 0; }
+ul.plain li { padding: 0.7rem 0; border-bottom: 1px solid var(–rule); }
+ul.plain li:last-child { border-bottom: none; }
+ul.plain .meta { display: block; margin: 0.15rem 0 0; }
+
+figure { margin: 1.5rem 0 0; }
+figure img {
+display: block; width: 100%; height: auto;
+background: #ffffff; border: 1px solid var(–rule);
+}
+figcaption {
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.8rem; color: var(–ink-soft); margin-top: 0.5rem; line-height: 1.5;
+}
+
+footer {
+margin-top: 3.5rem; padding-top: 1.4rem;
+border-top: 1px solid var(–rule);
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.85rem; color: var(–ink-soft);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.toggle { transition: color 0.15s, border-color 0.15s; }
+html { scroll-behavior: smooth; }
+}
+
+/* navigation */
+nav.sitenav {
+position: sticky; top: 0; z-index: 10;
+background: var(–paper);
+border-bottom: 1px solid var(–rule);
+}
+.navinner {
+max-width: 46rem; margin: 0 auto; padding: 0.55rem 1.4rem;
+display: flex; align-items: center; gap: 0.5rem;
+}
+.navlinks {
+display: flex; gap: 1.15rem; overflow-x: auto; flex: 1;
+scrollbar-width: none; -ms-overflow-style: none;
+}
+.navlinks::-webkit-scrollbar { display: none; }
+.navlinks a {
+font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+font-size: 0.82rem; color: var(–ink-soft); text-decoration: none;
+white-space: nowrap; padding: 0.25rem 0;
+border-bottom: 2px solid transparent;
+}
+.navlinks a:hover { color: var(–ink); border-bottom-color: var(–accent); }
+
+/* header */
+header.intro { padding: 2.6rem 0 0; }
+.idblock { display: flex; gap: 1.3rem; align-items: center; margin-bottom: 1.5rem; }
+.portrait {
+width: 104px; height: 104px; border-radius: 50%;
+object-fit: cover; flex-shrink: 0;
+border: 1px solid var(–rule);
+}
+.idtext { min-width: 0; }
+@media (max-width: 520px) {
+.idblock { gap: 1rem; }
+.portrait { width: 76px; height: 76px; }
+}
+
+/* section headings carry a short accent mark */
+h2 { position: relative; scroll-margin-top: 3.4rem; }
+h2::after {
+content: “”; position: absolute; left: 0; bottom: -1px;
+width: 2.6rem; height: 2px; background: var(–accent);
+}
+
+@media print {
+nav.sitenav, .toggle, .topbar { display: none; }
+body { background: #fff; color: #000; font-size: 10.5pt; }
+a { color: #000; }
+figure, .item, .feature { break-inside: avoid; }
+h2 { break-after: avoid; }
+}
+</style>
+
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="navinner">
+    <div class="navlinks">
+      <a href="#research">Research</a>
+      <a href="#code">Code</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+    <button class="toggle" id="themeBtn" type="button">Dark</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="intro">
+    <div class="idblock">
+      <img class="portrait" src="photo.jpg" alt="Osho Janet Oluwatimilehin"
+           onerror="this.style.display='none'">
+      <div class="idtext">
+        <h1>Osho Janet Oluwatimilehin</h1>
+        <p class="role">Chemistry graduate, Lagos, Nigeria. Removal of heavy metals from water, and Python for reproducible analysis.</p>
+      </div>
+    </div>
+    <p class="contact">
+      <a href="mailto:oshojanettimilehinfatia@gmail.com">oshojanettimilehinfatia@gmail.com</a>
+      <a href="https://github.com/Timimi18">GitHub</a>
+      <a href="https://www.linkedin.com/in/janet-oluwatimilehin-osho-674306135">LinkedIn</a>
+      <a href="https://orcid.org/0009-0005-8019-2245">ORCID 0009-0005-8019-2245</a>
+      <a href="https://www.webofscience.com/wos/author/record/RFB-3630-2026">ResearcherID RFB-3630-2026</a>
+    </p>
+
+```
+<p class="lede">I studied chemistry at Lagos State University and spent my final year testing whether a common agricultural waste, white yam peel, could pull zinc and manganese out of water. The honest answer was that it works, but modestly, and several of the results that looked best turned out not to be adsorption at all.</p>
+<p>Working out which results held up is the part I enjoyed most, so I rebuilt the whole analysis in Python and published it with the raw laboratory readings. I am now looking for a funded graduate position where I can keep doing this kind of work.</p>
+```
+
+  </header>
+
+  <h2>Research interests</h2>
+  <div class="item">
+    <p class="where">Environmental and analytical chemistry, separation science, sustainable and green chemistry, materials and surface chemistry, physical and inorganic chemistry.</p>
+    <p>Low-cost adsorbents for water treatment, trace-metal quantification, and the statistical side of deciding what experimental data can and cannot support.</p>
+  </div>
+
+  <h2 id="research">Research</h2>
+
+  <div class="item">
+    <h3>Adsorption of Zn(II) and Mn(II) on white yam peel</h3>
+    <p class="meta">B.Sc. research project, Lagos State University. Supervisor: Professor Rasaq A. Olowu, Professor of Physical and Electroanalytical Chemistry. November 2022 to May 2023. Graded A.</p>
+    <p>Raw <em>Dioscorea rotundata</em> peel was washed, dried, ground and tested against zinc and manganese in synthetic aqueous solutions. I varied adsorbent dose, contact time, pH, temperature and initial concentration, measured residual metal by flame atomic absorption spectroscopy, and characterised the material by FTIR and SEM-EDS before and after contact.</p>
+    <figure>
+      <img src="fig-adsorbent.jpeg" alt="White yam peels shown dried, ground and as a fine powder.">
+      <figcaption>The adsorbent: white yam peel after air-drying, after grinding, and sieved to a fine powder. No chemical modification or carbonisation was used.</figcaption>
+    </figure>
+
+```
+<p>What makes the project worth reading is the second pass. Several standard conclusions in this field did not survive a closer look at my own data.</p>
+
+<table class="findings">
+  <tr>
+    <th>Kinetics</th>
+    <td>A constant-uptake plateau fits better than pseudo-second-order by about 5 AICc units. Uptake had already levelled off at the first measurement, so no rate constant is recoverable.</td>
+  </tr>
+  <tr>
+    <th>Isotherms</th>
+    <td>Mn(II) follows Freundlich with 1/n = 1.47, the unfavourable regime. For Zn(II) all three models fit the usable points equally well, so none can be preferred.</td>
+  </tr>
+  <tr>
+    <th>Thermodynamics</th>
+    <td>Mn(II) shows an exothermic trend, &Delta;H&deg; = &minus;25.6 &plusmn; 22.7 kJ/mol. For Zn(II) the regression is not significant, so no values are reported.</td>
+  </tr>
+  <tr>
+    <th>Effect of pH</th>
+    <td>Apparent removal above 90% at pH 9 and 11 sits above the pH where the metal hydroxides can precipitate, so it cannot be called adsorption. The defensible figures are 21.0% and 11.4%, both at pH 5.</td>
+  </tr>
+</table>
+
+<figure>
+  <img src="fig-kinetics.png" alt="Uptake against contact time for both metals, with four kinetic models and a flat plateau line fitted.">
+  <figcaption>Contact-time data with the standard kinetic models and a constant-uptake plateau. The plateau wins by about 5 AICc units for both metals, and the time-dependent models are indistinguishable from each other, because there is no rising section for them to describe.</figcaption>
+</figure>
+
+<figure>
+  <img src="fig-ph.png" alt="Apparent removal against initial pH, with the region where metal hydroxides can precipitate shaded.">
+  <figcaption>Apparent removal against initial pH. The shaded regions begin where Zn(OH)2 and Mn(OH)2 can precipitate at the measured concentrations, pH 7.1 and 9.0. Open squares were measured undiluted, on a different analytical basis from the control. The removals above 90 percent sit in both categories at once.</figcaption>
+</figure>
+
+<figure>
+  <img src="fig-vanthoff.png" alt="Van't Hoff plots for both metals, with the Mn fit significant and the Zn fit not.">
+  <figcaption>Van't Hoff regressions over 27 to 67 C. The Mn(II) trend is significant and exothermic. The Zn(II) regression is not significant and its confidence interval spans zero, so no thermodynamic values are reported for Zn(II) at all.</figcaption>
+</figure>
+
+<p><a href="https://drive.google.com/file/d/1YgIvgLZk43UNl3aYk4HWG7Xoj92moXJv/view">Read the research abstract (PDF)</a> &nbsp; <a href="https://drive.google.com/file/d/1r9xik6hH2-xTgIQNiuOBCXYzxcVHMjEj/view">Read the full thesis (PDF)</a></p>
+```
+
+  </div>
+
+  <div class="feature">
+    <h3>Reproducible reanalysis of the thesis data</h3>
+    <p class="meta">Python, pandas, SciPy, Jupyter. Six notebooks, raw data included.</p>
+    <p>Every figure is computed from the raw atomic absorption readings, which are published alongside the code. The first notebook checks twelve derived values against the numbers printed in the thesis, so a transcription or arithmetic error would stop the run.</p>
+    <p>Two checks do most of the work. With five time points there are only 120 ways to pair the measured uptakes with the times, so I enumerate all of them: the linearised pseudo-second-order plot scores 0.78 on the real data and a median of 0.83 on shuffled data, which means the plot cannot tell the measurements from noise. A rank correlation of &minus;0.90 between residual concentration and uptake in the dose series shows that series is not an isotherm dataset at all, so it is excluded and the reason is documented.</p>
+    <figure>
+      <img src="fig-permutation.png" alt="The linearised pseudo-second-order plot beside a histogram of R-squared values from all 120 shuffles of the data.">
+      <figcaption>Left: the plot that normally gets reported as evidence for pseudo-second-order kinetics. Right: the same calculation run on all 120 ways of pairing the measured uptakes with the five times. Shuffled data scores a median of 0.83 against the real data's 0.78, and 79 percent of shuffles beat it. The plot cannot tell the measurements from noise.</figcaption>
+    </figure>
+
+```
+<p><a href="https://github.com/Timimi18/yam-peel-adsorption-analysis">github.com/Timimi18/yam-peel-adsorption-analysis</a></p>
+```
+
+  </div>
+
+  <h2>Publications and manuscripts</h2>
+  <div class="item">
+    <p class="where">Osho, J. O. and Olowu, R. A. Kinetic, Isotherm and Thermodynamic Studies on the Adsorption of Zn(II) and Mn(II) onto White Yam Peels.</p>
+    <p class="meta">Manuscript in preparation for submission to the Journal of Undergraduate Research International (JURI), King Fahd University of Petroleum and Minerals.</p>
+    <p class="meta"><a href="https://drive.google.com/file/d/1XzeOpExz_isMXRn3aM16ilkm96WRZBEr/view">Manuscript</a> &middot;
+      <a href="https://drive.google.com/file/d/194pTBzEO39MD78XEhQNts6sTUMRo26NM/view">Supplementary material</a></p>
+  </div>
+
+  <h2>Presentations</h2>
+  <div class="item">
+    <p class="where">Adsorption of Zn(II) and Mn(II) on white yam peel.</p>
+    <p class="meta">Departmental seminar (CHM 496), Department of Chemistry, Lagos State University, 26 April 2023. Graded A. Thesis defence followed on 3 May 2023.</p>
+    <p class="meta"><a href="https://drive.google.com/file/d/1h3MI2xCy0gr5aJtTj1cu99t_OGAKm9CX/view">Presentation slides</a></p>
+  </div>
+
+  <h2 id="code">Python projects</h2>
+
+  <ul class="plain">
+    <li>
+      <h3><a href="https://github.com/Timimi18/fcc-hash-table-custom">Custom hash table</a></h3>
+      <p class="meta">A hash table built from scratch, with string hashing and collision handling by chaining.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/fcc-tower-of-hanoi-solver">Tower of Hanoi solver</a></h3>
+      <p class="meta">Recursive solution to the puzzle, tracking the state of all three rods at each move.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/fcc-budget-app">Budget app</a></h3>
+      <p class="meta">Ledger categories with transfers, overdraft checks, and a spending chart drawn in text.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/fcc-polygon-area-calculator">Polygon area calculator</a></h3>
+      <p class="meta">Rectangle and square classes using inheritance, with area, perimeter and a drawing method.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/fcc-user-configuration-manager">User configuration manager</a></h3>
+      <p class="meta">Settings handled with dictionaries and tuples, with protected values that cannot be overwritten.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/freecodecamp-python-labs">Python labs archive</a></h3>
+      <p class="meta">17 independent labs written against test specifications, covering data structures and algorithms.</p>
+    </li>
+    <li>
+      <h3><a href="https://github.com/Timimi18/freecodecamp-python-workshops">Python workshops archive</a></h3>
+      <p class="meta">20 guided workshops on core language concepts, from loops and functions to regular expressions.</p>
+    </li>
+  </ul>
+
+  <h2 id="skills">Laboratory and analytical skills</h2>
+
+  <div class="item">
+    <h3>Instrumental analysis performed</h3>
+    <p>UV-Vis spectroscopy, conductometry, digital pH-metry, and complexometric and volumetric titrations, carried out in undergraduate practicals across 100 to 400 level and in water quality work during SIWES.</p>
+  </div>
+
+  <div class="item">
+    <h3>Instrumental data interpreted</h3>
+    <p>Flame atomic absorption spectroscopy, FTIR and SEM-EDS. For the thesis these measurements were run at an external laboratory. I prepared and submitted the samples and interpreted the reported output: matching EDS peak positions against tabulated X-ray emission lines, judging FTIR band shifts against the instrument resolution, and checking the reported compositions against the uptake measured independently by AAS.</p>
+  </div>
+
+  <div class="item">
+    <h3>Laboratory technique</h3>
+    <p>Biomass processing and precision sieving, batch adsorption experiments on an HY-4 shaker, jar testing on a flocculator, thermostatic water bath work, serial dilution, buffer and standard preparation, titration and quantitative analysis. Safety data sheet interpretation, safe handling of acids, bases and heavy-metal salts, and chemical waste segregation.</p>
+  </div>
+
+  <div class="item">
+    <h3>Data handling and quality control</h3>
+    <p>Dilution-factor verification, unit and dimensional checking, independent recalculation, traceability from a final value back to the raw instrument reading, relative standard deviation, data cleaning and reconciliation.</p>
+  </div>
+
+  <div class="item">
+    <h3>Modelling and statistics</h3>
+    <p>Non-linear isotherm fitting (Langmuir, Freundlich, Temkin), kinetic model comparison (pseudo-first-order, pseudo-second-order, Elovich, intraparticle diffusion and constant-uptake plateau), AICc model selection, RMSE and residual analysis, regression with confidence intervals, van't Hoff analysis, permutation testing and correlation analysis.</p>
+  </div>
+
+  <div class="item">
+    <h3>Software</h3>
+    <p>Python with pandas, SciPy, NumPy and Matplotlib, in Jupyter notebooks. Excel for regression and modelling. SQL, Tableau, Git and GitHub.</p>
+  </div>
+
+  <div class="item">
+    <h3>Operations and administration</h3>
+    <p>Records management, scheduling, workflow coordination, procurement and supplier liaison, inventory control, filing and archiving.</p>
+  </div>
+
+  <div class="item">
+    <h3>Communication and research</h3>
+    <p>Technical and scientific writing, literature review, reference and citation verification, written correspondence, and liaison with staff, parents and customers.</p>
+  </div>
+
+  <h2 id="experience">Experience</h2>
+
+  <div class="item">
+    <h3>Chemistry Teacher and Administrative Support</h3>
+    <p class="meta">National Youth Service Corps. Baetu-L-Ulum Montessori Islamic School, Ota, Ogun State. November 2023 to October 2024.</p>
+    <p>Taught chemistry across SS1 to SS3, preparing students for the West African Examinations Council examinations. Managed attendance, academic performance and staff records for over 200 students, prepared weekly and termly assessment reports, and reorganised the filing system to cut retrieval backlogs. Served in the Red Cross Society community development group.</p>
+    <p><a href="https://drive.google.com/file/d/1MhT-n7MFt8L1qaAm7dQdpaEnBbCt6r62/view">Service documentation (PDF)</a></p>
+  </div>
+
+  <div class="item">
+    <h3>Industrial Chemist Intern (SIWES)</h3>
+    <p class="meta">Lagos State Water Corporation, Isashi Waterworks, Ojo, Lagos. August to September 2021. Supervised by Mr Sule Kabiru, Senior Technical Officer.</p>
+    <p>Determined physicochemical parameters of raw and treated water: pH, turbidity, colour by Lovibond comparator, iron, conductivity, salinity and total dissolved solids, recorded against plant quality-control targets, alongside microbiological testing of municipal samples under supervision.</p>
+    <p>Ran jar tests on a laboratory flocculator to find optimum coagulant dosing, varying alum, lime, calcium hypochlorite and polyelectrolyte across dose series and judging each by pH and residual turbidity. Prepared and standardised the 1% stock solutions used in those trials.</p>
+    <p>Studied the full treatment train at a works abstracting 4.3 to 4.5 million gallons per day, including vertical clarifier operation and the chemistry of coagulation, pH correction, softening and disinfection, with a field visit to the raw water source at River Owo.</p>
+    <p><a href="https://drive.google.com/file/d/19LY_Gjfr1hcmk1yfnFT5b4a2Zag779tV/view">Signed SIWES logbook (PDF)</a></p>
+  </div>
+
+  <div class="item">
+    <h3>Peer Tutor</h3>
+    <p class="meta">Department of Chemistry, Lagos State University. During undergraduate studies.</p>
+    <p>Tutored coursemates in analytical and physical chemistry topics and in the calculations behind them.</p>
+  </div>
+
+  <div class="item">
+    <h3>Founder, Shop Timi Accessories and Essentials</h3>
+    <p class="meta">Self-employed. 2022 to present.</p>
+    <p>Run day-to-day operations across jewellery, beauty products, fragrance, bags, drinkware and kids' items: inventory tracking, order processing, customer enquiries and resolution, supplier communication and procurement, and sales and financial records.</p>
+  </div>
+
+  <h2>Other work experience</h2>
+
+  <div class="item">
+    <h3>Customer Registration and Data Associate</h3>
+    <p class="meta">Tee and Tee Multipurpose and Global Services, Bariga, Lagos. January to July 2020.</p>
+    <p>Registered customers, verified documents and entered records into digital systems, then ran regular checks to find and correct errors in the database.</p>
+  </div>
+
+  <div class="item">
+    <h3>Administrative Support</h3>
+    <p class="meta">Casterbridge Creche, Kindergarten, Nursery and Primary School, Oworonshoki, Lagos. September 2018 to March 2019.</p>
+    <p>Kept academic, attendance and communication records for over 100 pupils, prepared teaching materials and class schedules for a team of eight teachers, and handled communication between parents and school management.</p>
+  </div>
+
+  <div class="item">
+    <h3>Sales and Customer Service Associate</h3>
+    <p class="meta">Wisdom and Love Enterprises, Gbagada, Lagos. June 2017 to July 2018.</p>
+    <p>Processed cash and card payments with no discrepancies over a year, kept daily sales and inventory records, and supported in-store promotions.</p>
+  </div>
+
+  <h2 id="education">Education</h2>
+  <div class="item">
+    <h3>B.Sc. Chemistry</h3>
+    <p class="meta">Lagos State University, Ojo, Lagos. March 2019 to May 2023. Specialisation: environmental and analytical chemistry. NYSC completed October 2024.</p>
+    <p>Research project graded A.</p>
+    <p class="meta">CGPA 3.38 out of 5.00. The final four semesters averaged 3.56 out of 5.00, which is Second Class Upper standing. Graduated within the top 30% of the Department of Chemistry.</p>
+    <p class="meta"><a href="https://drive.google.com/file/d/1SWtCSYhAPxWMQdmAdh_dPOU5o75dFURu/view">Academic transcript</a> &middot;
+      <a href="https://drive.google.com/file/d/1LkgVjqJ0gCWDCjdx1xNkIFK5DR8Ja2EL/view">Degree certificate</a></p>
+    <p><strong>Analytical and physical:</strong> Analytical Chemistry I and II, Experimental Analytical Chemistry, Basic Physical Chemistry I and II, Chemical Kinetics, Chemical Thermodynamics, Spectroscopy and Separation Techniques, Atomic and Molecular Spectroscopy, Surface and Colloid Chemistry, Electrochemistry, Statistical Mechanics.</p>
+    <p><strong>Environmental and applied:</strong> Environmental Chemistry, Industrial Chemistry I and II, Petroleum Chemistry, Nuclear and Radiation Chemistry, Biostatistics.</p>
+    <p><strong>Inorganic and organic:</strong> Co-ordination Chemistry, Organometallic Chemistry, Transition Metal Chemistry, Main Group Chemistry, Quantum Chemistry, Organic Synthetic Methods, Physical Organic Reactions and Mechanism.</p>
+  </div>
+
+  <h2>Academic strengths</h2>
+  <ul class="plain">
+    <li>Grade A on the B.Sc. research project, and Grade A on the departmental seminar that preceded the defence</li>
+    <li>Sustained high performance across recent graduate-level coursework: 100% on the freeCodeCamp Python certification exam, 98% in Cisco Data Analytics Essentials, 98% in Stanford's Writing in the Sciences, 94.87% in Saylor's Introduction to Statistics, and 92% on the University of Michigan Python capstone</li>
+    <li>Classroom experience as a peer tutor at LASU and a full year teaching chemistry across SS1 to SS3 during NYSC</li>
+  </ul>
+
+  <h2 id="certifications">Certifications</h2>
+  <ul class="plain">
+    <li>Python Developer Certification, freeCodeCamp
+      <span class="meta">7 October 2026. Approximately 300 hours of work: 578 of 578 curriculum steps across 5 certification projects, 17 labs and 20 workshops, followed by the certification exam, passed at 100%.
+      <a href="https://www.freecodecamp.org/certification/timimi/python-v9">Verify</a> &middot;
+      <a href="https://drive.google.com/file/d/1s2tRospWJtmiD9zv8ikgnwBW9HmB2xHo/view">Certificate</a></span>
+    </li>
+    <li>MA121: Introduction to Statistics, Saylor University
+      <span class="meta">5 October 2026. Grade 94.87%. 35 hours, 3.5 CEUs. Certificate ID 7716191795JO.
+      <a href="https://drive.google.com/file/d/1P7EuUubNyH2zuBBBojEQ9slnzx73Kuef/view">Certificate</a></span>
+    </li>
+    <li>Writing in the Sciences, Stanford Online via Coursera
+      <span class="meta">28 September 2026. Score 98%.
+      <a href="https://www.coursera.org/verify/R3Z4CIAVOFRT">Verify</a> &middot;
+      <a href="https://drive.google.com/file/d/1ZbVlUJ5SlRqnVw4fpWJlR-CAZeVrjT4q/view">Certificate</a></span>
+    </li>
+    <li>Data Analytics Essentials, Cisco Networking Academy
+      <span class="meta">6 October 2026. Score 98%. Student level credential. Certificate ID 7d80d286-802c-4626-bd1d-2f425a8c0825.
+      <a href="https://drive.google.com/file/d/1918VIWbsMdoj1dKHbBmgIsyGzvcylYQh/view">Certificate</a> &middot;
+      <a href="https://drive.google.com/file/d/1qHTdPFn2NmQqX2FuSxgHesdDiDuej0lb/view">Course record</a> &middot;
+      <a href="https://www.credly.com/badges/2fbbd8a2-642b-4633-82b5-968fe20ef0d3/public_url">Verify badge</a></span>
+    </li>
+    <li>Leadership and Team Development, Young Nigeria Works with She Leads Africa
+      <span class="meta">April 2025.
+      <a href="https://drive.google.com/file/d/1IROfHvc11XbnhqjArrspUNG6RXupHDow/view">Certificate</a></span>
+    </li>
+    <li>SLA EmployHer Pathway (Basics), She Leads Africa
+      <span class="meta">November 2024.
+      <a href="https://drive.google.com/file/d/1z564iA06sPiiC2pk0q5pUSln6T4gVpYV/view">Certificate</a></span>
+    </li>
+    <li>Basic First Aid Course, Nigerian Red Cross Society, Ogun State Branch
+      <span class="meta">10 to 15 July 2024. Certificate of Competence.
+      <a href="https://drive.google.com/file/d/1LEluTy7mQzjnFterg209E4EvAbFwnB8m/view">Certificate</a></span>
+    </li>
+    <li>Capstone: Retrieving, Processing and Visualizing Data with Python, University of Michigan via Coursera
+      <span class="meta">Completed at 92%. No certificate is issued for this course. <a href="https://drive.google.com/file/d/14__kNCm2v5HVs2AtNfxb2tpl5PEykngT/view">Course record</a></span>
+    </li>
+    <li>Jobberman Soft-Skills Training, Jobberman Nigeria
+      <span class="meta">5 to 31 August 2020.
+      <a href="https://drive.google.com/file/d/1eUa0bMCNQkqA3zh9w1gjVApm0GCx7KYZ/view">Certificate</a></span>
+    </li>
+  </ul>
+
+  <h2>Languages</h2>
+  <ul class="plain">
+    <li>English, fluent. Medium of instruction throughout the B.Sc. degree</li>
+    <li>Yoruba, native speaker</li>
+    <li>German, A1, self-study in progress</li>
+    <li>French, A1, self-study in progress</li>
+  </ul>
+
+  <h2>Affiliations and volunteering</h2>
+  <ul class="plain">
+    <li>Member, Chemical Society of Nigeria, LASU student chapter
+      <span class="meta">Since March 2019.
+      <a href="https://drive.google.com/file/d/1keho_q1bJiAmJPugs62aOGVM-rkFUBx5/view">Membership card</a></span>
+    </li>
+    <li>Member, Nigerian Red Cross Society
+      <span class="meta">Served through the Red Cross community development service group during NYSC.</span>
+    </li>
+    <li>Environmental clean-up and awareness volunteer, Lagos
+      <span class="meta">Since August 2021. Sanitation campaigns on waste management and pollution reduction, and community education on environmental protection and drainage safety.</span>
+    </li>
+  </ul>
+
+  <footer>
+    <p>Built with plain HTML and CSS. Source at <a href="https://github.com/Timimi18">github.com/Timimi18</a>.</p>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("themeBtn");
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    function apply(theme) {
+      root.setAttribute("data-theme", theme);
+      btn.textContent = theme === "dark" ? "Light" : "Dark";
+      btn.setAttribute("aria-label", "Switch to " + (theme === "dark" ? "light" : "dark") + " mode");
+    }
+
+    apply(prefersDark ? "dark" : "light");
+
+    btn.addEventListener("click", function () {
+      apply(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+    });
+  })();
+</script>
+
+</body>
+</html>
